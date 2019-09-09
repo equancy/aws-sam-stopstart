@@ -20,7 +20,7 @@ Resources:
         Hourly:
           Type: Schedule
           Properties:
-            Schedule: rate(1 hour)
+            Schedule: cron(0 * * * ? *)
       Policies:
       - Version: "2012-10-17"
         Statement: 
